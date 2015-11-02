@@ -1,3 +1,5 @@
 class Article < ActiveRecord::Base
-  #manage date, logic, rules of application
+  #manage data, logic, rules of application
+  validates :title, presence: true,
+                    length: {minimum: 5}
 end
